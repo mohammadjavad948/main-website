@@ -11,10 +11,6 @@ export default function Home() {
           <title>big javad</title>
         </Head>
         <div className={styles.main}>
-            <div>
-                <h1 className={styles.title}>mohammad javad</h1>
-                <Technology />
-            </div>
             <Image
                 src={"/prof.png"}
                 width={150}
@@ -22,6 +18,10 @@ export default function Home() {
                 alt={"profile image"}
                 className={styles.image}
             />
+            <div>
+                <h1 className={styles.title}>mohammad javad</h1>
+                <Technology />
+            </div>
         </div>
       </div>
   )
