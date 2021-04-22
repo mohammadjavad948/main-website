@@ -10,7 +10,7 @@ export default function Home() {
         </Head>
         <div className={styles.main}>
             <div>
-                <h1>'mohammad javad' also known as 'big javad'</h1>
+                <h1 className={styles.title}>'mohammad javad' also known as 'big javad'</h1>
             </div>
             <Image
                 src={"/prof.png"}
