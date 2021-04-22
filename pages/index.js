@@ -10,6 +10,7 @@ export default function Home() {
         <Head>
             <title>big javad</title>
             <meta name="description" content="mohammad javad also known as big javad is a fullstack developer who loves react"/>
+            <meta name="google-site-verification" content="qIv3dvbPg6ynoFWWLeUQloW0G_1EFXfxsZXIAso_7lI" />
         </Head>
         <div className={styles.main}>
             <Image
