@@ -7,6 +7,9 @@ export default function Home() {
         <Head>
           <title>big javad</title>
         </Head>
+        <div className={styles.main}>
+
+        </div>
       </div>
   )
 }
