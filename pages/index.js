@@ -9,6 +9,9 @@ export default function Home() {
           <title>big javad</title>
         </Head>
         <div className={styles.main}>
+            <div>
+                <h1>'mohammad javad' also known as 'big javad'</h1>
+            </div>
             <Image
                 src={"/prof.png"}
                 width={150}
