@@ -46,7 +46,7 @@ function Technology(){
     }, []);
 
     return (
-        <span>
+        <span className={styles.description}>
             <TextTransition
                 springConfig={presets.wobbly}
                 text={ TEXTS[index % TEXTS.length] }
