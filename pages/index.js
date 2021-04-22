@@ -8,7 +8,8 @@ export default function Home() {
   return (
       <div className={styles.container}>
         <Head>
-          <title>big javad</title>
+            <title>big javad</title>
+            <meta name="description" content="mohammad javad also known as big javad is a fullstack developer who loves react"/>
         </Head>
         <div className={styles.main}>
             <Image
