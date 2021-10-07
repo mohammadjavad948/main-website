@@ -25,7 +25,6 @@ export default function Home() {
                 <Technology />
             </div>
         </div>
-          <Links />
       </div>
   )
 }
@@ -57,15 +56,6 @@ function Technology(){
             />
             &nbsp; developer
         </span>
-    )
-}
-
-function Links(){
-
-    return (
-        <div className={styles.linksContainer}>
-            test
-        </div>
     )
 }
 
