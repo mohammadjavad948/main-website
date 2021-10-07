@@ -18,11 +18,12 @@ export default function Frameworks(){
                   }}
             />
             <h2>Frameworks</h2>
-            <h3>Typescript</h3>
-            <h3>Javascript</h3>
-            <h3>Python</h3>
-            <h3>PHP</h3>
-            <h3>C</h3>
+            <h3>ReactJs</h3>
+            <h3>Angular 2+</h3>
+            <h3>VueJs</h3>
+            <h3>NextJs</h3>
+            <h3>Laravel</h3>
+            <h3>NestJs</h3>
         </div>
     )
 }
