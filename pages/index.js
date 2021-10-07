@@ -3,7 +3,6 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import TextTransition, {presets} from "react-text-transition";
 import {useEffect, useState} from "react";
-import Wave from 'react-wavify'
 import Language from "../components/Language";
 
 export default function Home() {
