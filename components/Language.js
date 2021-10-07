@@ -19,9 +19,11 @@ export default function Language(){
                   }}
             />
             <h2>Languages</h2>
-            <div>
-
-            </div>
+            <h3>Typescript</h3>
+            <h3>Javascript</h3>
+            <h3>Python</h3>
+            <h3>PHP</h3>
+            <h3>C</h3>
         </div>
     )
 }
