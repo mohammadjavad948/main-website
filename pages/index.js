@@ -51,7 +51,9 @@ const TEXTS = [
     "React",
     "Angular",
     "Laravel",
-    "Nodejs"
+    "Nodejs",
+    "NextJs",
+    "NestJs"
 ];
 
 function Technology(){
