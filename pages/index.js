@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.css'
 import TextTransition, {presets} from "react-text-transition";
 import {useEffect, useState} from "react";
 import Wave from 'react-wavify'
+import Language from "../components/Language";
 
 export default function Home() {
   return (
@@ -28,21 +29,7 @@ export default function Home() {
                   </div>
               </div>
           </div>
-          <div className={styles.frameworks}>
-              <Wave fill='#ffffff'
-                    paused={false}
-                    options={{
-                        height: 20,
-                        amplitude: 40,
-                        speed: 0.2,
-                        points: 5
-                    }}
-                    style={{
-                        position: 'absolute',
-                        top: '-100px'
-                    }}
-              />
-          </div>
+          <Language />
       </div>
   )
 }
