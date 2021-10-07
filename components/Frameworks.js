@@ -19,6 +19,7 @@ export default function Frameworks(){
             />
             <h2>Frameworks</h2>
             <h3>ReactJs</h3>
+            <h3>React Native</h3>
             <h3>Angular 2+</h3>
             <h3>VueJs</h3>
             <h3>NextJs</h3>
