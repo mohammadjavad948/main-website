@@ -4,7 +4,7 @@ import Wave from "react-wavify";
 export default function Frameworks(){
     return (
         <div className={styles.frameworks}>
-            <Wave fill='#ffffff'
+            <Wave fill='#210047'
                   paused={false}
                   options={{
                       height: 20,
