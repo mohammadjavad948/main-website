@@ -18,6 +18,7 @@ export default function Language(){
                       top: '-150px'
                   }}
             />
+            <h2>Languages</h2>
         </div>
     )
 }
