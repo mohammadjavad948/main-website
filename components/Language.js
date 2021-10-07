@@ -15,7 +15,7 @@ export default function Language(){
                   }}
                   style={{
                       position: 'absolute',
-                      top: '-100px'
+                      top: '-150px'
                   }}
             />
         </div>
