@@ -2,6 +2,7 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Language from "../components/Language";
 import Landing from "../components/Landing";
+import Frameworks from "../components/Frameworks";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
           </Head>
           <Landing />
           <Language />
+          <Frameworks />
       </div>
   )
 }
