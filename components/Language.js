@@ -19,6 +19,11 @@ export default function Language(){
                   }}
             />
             <h2>Languages</h2>
+            <hr
+                style={{
+                    width: '70%'
+                }}
+            />
             <h3>Typescript</h3>
             <h3>Javascript</h3>
             <h3>Python</h3>
