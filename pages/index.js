@@ -6,25 +6,27 @@ import {useEffect, useState} from "react";
 
 export default function Home() {
   return (
-      <div className={styles.container}>
-        <Head>
-            <title>mohammad javad</title>
-            <meta name="description" content="mohammad javad also known as big javad is a fullstack developer who loves react"/>
-            <meta name="google-site-verification" content="qIv3dvbPg6ynoFWWLeUQloW0G_1EFXfxsZXIAso_7lI" />
-        </Head>
-        <div className={styles.main}>
-            <Image
-                src={"/prof.png"}
-                width={150}
-                height={150}
-                alt={"profile image"}
-                className={styles.image}
-            />
-            <div>
-                <h1 className={styles.title}>mohammad javad</h1>
-                <Technology />
-            </div>
-        </div>
+      <div className={styles.mainContainer}>
+          <div className={styles.container}>
+              <Head>
+                  <title>mohammad javad</title>
+                  <meta name="description" content="mohammad javad also known as big javad is a fullstack developer who loves react"/>
+                  <meta name="google-site-verification" content="qIv3dvbPg6ynoFWWLeUQloW0G_1EFXfxsZXIAso_7lI" />
+              </Head>
+              <div className={styles.main}>
+                  <Image
+                      src={"/prof.png"}
+                      width={150}
+                      height={150}
+                      alt={"profile image"}
+                      className={styles.image}
+                  />
+                  <div>
+                      <h1 className={styles.title}>mohammad javad</h1>
+                      <Technology />
+                  </div>
+              </div>
+          </div>
       </div>
   )
 }
