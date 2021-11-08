@@ -82,3 +82,21 @@
     flex-direction: column;
   }
 }
+
+.transitionsItem {
+  overflow: hidden;
+  font-size: 4em;
+  font-weight: 800;
+  will-change: transform, opacity, height;
+  white-space: nowrap;
+  line-height: 80px;
+}
+
+.animContainer{
+  flex-wrap: wrap;
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
