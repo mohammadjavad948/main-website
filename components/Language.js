@@ -2,7 +2,7 @@ import styles from "../styles/Home.module.css";
 import Wave from "react-wavify";
 import {useEffect, useState} from 'react';
 import {useTransition, animated} from 'react-spring';
-import {randomItem, randomNumber} from "./randomPicker";
+import {randomNumber} from "./randomPicker";
 import sampleSize from 'lodash/sampleSize';
 
 const MAIN_ITEMS = [

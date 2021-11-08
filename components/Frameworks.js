@@ -1,7 +1,45 @@
 import styles from "../styles/Home.module.css";
 import Wave from "react-wavify";
+import {useEffect, useState} from 'react';
+import {animated, useTransition} from "react-spring";
+import sampleSize from "lodash/sampleSize";
+import {randomNumber} from "./randomPicker";
+
+
+const MAIN_ITEMS = [
+    'ReactJs',
+    'React Native',
+    'Angular 2+',
+    'VueJs',
+    'NextJs',
+    'Laravel',
+    'NestJs'
+]
 
 export default function Frameworks(){
+
+    const [items, setItems] = useState([])
+    const animation = useTransition(items, {
+        from: {
+            opacity: 0,
+            width: '0%',
+            transform: 'perspective(600px) rotateX(0deg)',
+            color: '#28d79f',
+        },
+        enter: [
+            { opacity: 1, width: '100%', },
+            { color: '#8fa5b6' },
+            {delay: 500}
+        ],
+        leave: [{delay: 500}, { width: '0%', }, { opacity: 0 }],
+    });
+
+    useEffect(() => {
+        setInterval(() => {
+            setItems(sampleSize(MAIN_ITEMS, randomNumber(5)))
+        }, 3000);
+    }, [])
+
     return (
         <div className={styles.frameworks}>
             <Wave fill='#210047'
@@ -23,13 +61,13 @@ export default function Frameworks(){
                     width: '70%'
                 }}
             />
-            <h3>ReactJs</h3>
-            <h3>React Native</h3>
-            <h3>Angular 2+</h3>
-            <h3>VueJs</h3>
-            <h3>NextJs</h3>
-            <h3>Laravel</h3>
-            <h3>NestJs</h3>
+            <div className={styles.animContainer}>
+                {animation(({ width, ...rest }, item) => (
+                    <animated.div className={styles.transitionsItem} style={rest}>
+                        <animated.div style={{ overflow: 'hidden', width: width }}>{item}</animated.div>
+                    </animated.div>
+                ))}
+            </div>
         </div>
     )
 }
