@@ -22,16 +22,17 @@ export default function Frameworks(){
     const animation = useTransition(items, {
         from: {
             opacity: 0,
-            width: '0%',
+            height: 0,
+            innerHeight: 0,
             transform: 'perspective(600px) rotateX(0deg)',
             color: '#28d79f',
         },
         enter: [
-            { opacity: 1, width: '100%', },
+            { opacity: 1, height: 80, innerHeight: 80, },
             { color: '#8fa5b6' },
             {delay: 500}
         ],
-        leave: [{delay: 500}, { width: '0%', }, { opacity: 0 }],
+        leave: [{delay: 500}, { height: 0, innerHeight: 0, }, { opacity: 0 }],
     });
 
     useEffect(() => {
@@ -62,9 +63,9 @@ export default function Frameworks(){
                 }}
             />
             <div className={styles.animContainer}>
-                {animation(({ width, ...rest }, item) => (
+                {animation(({ innerHeight, ...rest }, item) => (
                     <animated.div className={styles.transitionsItem} style={rest}>
-                        <animated.div style={{ overflow: 'hidden', width: width }}>{item}</animated.div>
+                        <animated.div style={{ overflow: 'hidden', height: innerHeight }}>{item}</animated.div>
                     </animated.div>
                 ))}
             </div>
