@@ -33,11 +33,12 @@ export default function Frameworks(){
             {delay: 500}
         ],
         leave: [{delay: 500}, { height: 0, innerHeight: 0, }, { opacity: 0 }],
+        trail: 300,
     });
 
     useEffect(() => {
         setInterval(() => {
-            setItems(sampleSize(MAIN_ITEMS, randomNumber(5)))
+            setItems(sampleSize(MAIN_ITEMS, randomNumber(7)))
         }, 3000);
     }, [])
 
