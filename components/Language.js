@@ -17,6 +17,15 @@ export default function Language(){
 
     const [items, setItems] = useState([])
     const animation = useTransition(items, {
+        sort: (a, b) => {
+            if (a > b) {
+                return 1;
+            }
+            if (b > a) {
+                return -1;
+            }
+            return 0;
+        },
         from: {
             opacity: 0,
             height: 0,
